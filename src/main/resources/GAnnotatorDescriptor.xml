@@ -11,6 +11,7 @@
     <configurationParameters>
       <configurationParameter>
         <name>TrainedModel</name>
+        <description>Path to the trained model</description>
         <type>String</type>
         <multiValued>false</multiValued>
         <mandatory>false</mandatory>

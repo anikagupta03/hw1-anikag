@@ -10,6 +10,7 @@
     <configurationParameters>
       <configurationParameter>
         <name>OutputFile</name>
+        <description>Name of the output file</description>
         <type>String</type>
         <multiValued>false</multiValued>
         <mandatory>false</mandatory>
