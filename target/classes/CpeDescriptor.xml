@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cpeDescription>
+    <collectionReader>
+        <collectionIterator>
+            <descriptor>
+                <import location="./GCollectionReaderDescriptor.xml"/>
+            </descriptor>
+        </collectionIterator>
+    </collectionReader>
+    <casProcessors casPoolSize="1" processingUnitThreadCount="1">
+		<casProcessor deployment="integrated" name="GAnnotator">
+	        <descriptor>
+                <import location ="./GAnnotatorDescriptor.xml"/>
+            </descriptor>
+            <deploymentParameters/>
+        </casProcessor>
+		<casProcessor deployment="integrated" name="GConsumer">
+            <descriptor>
+                <import location="GConsumerDescriptor.xml"/>
+            </descriptor>
+            <deploymentParameters/>
+        </casProcessor>
+    </casProcessors>
+    <cpeConfig>
+        <numToProcess>-1</numToProcess>
+        <deployAs>immediate</deployAs>
+        <checkpoint file="" time="300000"/>
+        <timerImpl></timerImpl>
+    </cpeConfig>
+</cpeDescription>
